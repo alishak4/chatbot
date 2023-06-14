@@ -1,0 +1,29 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["hi", "hello", "hey"],
+        "responses": ["Hello!", "Hi there!", "Hey! How can I assist you?"]
+      },
+      {
+        "tag": "faq",
+        "patterns": ["workdocs", "documents", "files"],
+        "responses": [        "Workdocs is a collaborative tool for managing documents and files in Monday.",
+        "You can use Workdocs to create, share, and collaborate on documents within Monday.",
+        "Workdocs offers features such as document creation, file sharing, collaborative editing, version control, and commenting.",
+        "With Workdocs, you can track changes, assign tasks, and receive notifications on document updates.",
+        "Workdocs provides a centralized space for teams to work together efficiently and stay organized."]
+      },
+      {
+        "tag": "what",
+        "patterns": ["what is a workdoc"],
+        "responses": ["Think of it as a flexible, multi-media whiteboard where you and your team can record all notes and ideas related to one central topic. By adding individual elements to your workdoc, all your loose thoughts and ideas can come together in one place, right inside monday.com, where all the rest of your work is stored.   "]
+      },
+      {
+        "tag": "add",
+        "patterns": ["add", "workdoc", "how", "how do i add a workdoc"],
+        "responses": ["hi", "Step 1 - From within the workspace you'd like to create the workdoc in, click 'Add'. \n Step 2 - Select 'New Doc' \n Step 3 - Type the name of your workdoc into the first field \n Step 4 - Select the type of workdoc \n Step 5 - Click 'create workdoc' "]
+      }
+    ]
+}
+
