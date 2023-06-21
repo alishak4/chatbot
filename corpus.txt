@@ -1,0 +1,23 @@
+At monday.com, we work best when things are organized clearly and visually. This is why we have created monday workdocs! Workdocs are a central place for you and your team to collaborate, brainstorm, plan, and execute. Forget the notebook, close Google Docs, and toss away all your sticky notes—let's learn how to master monday workdocs together! 📝
+Think of it as a flexible, multi-media whiteboard where you and your team can record all notes and ideas related to one central topic. By adding individual elements to your workdoc, all your loose thoughts and ideas can come together in one place, right inside monday.com, where all the rest of your work is stored.
+You can add a new workdoc just as you would add a new board or dashboard!
+Just like boards and dashboards, there are three types of workdocs:
+To invite team members or guests, click the "Share" button at the top right corner of your screen:
+Next, type in the name of the team member you'd like to add or the email address of a guest you'd like to invite if you've chosen a shareable workdoc.
+You can turn any workdoc member into an owner by clicking the gray crown icon beside their name to turn it blue! An owner is, by default, the person who created the workdoc and someone who the creator has crowned as an additional owner. Like a board, only the workdoc owner can crown other owners and delete or duplicate the workdoc.
+Tip: Workdocs allow you to collaborate with hundreds of team members in a smooth and effective way! Try sharing your doc across your organization to help streamline your workflows.
+Create a shareable public link
+Generate a link to a secure, read-only version of your workdocs to share with people external to your monday.com account.
+Read this article to learn more about shareable links, how they differ from workdocs within your account, and how we work hard to protect your account's sensitive data.
+There are two different types of edit permissions that you can implement in your workdoc:
+You can change these permissions easily by clicking the "Share" button and then selecting one of the two options at the bottom of the pop-up window, as shown in the image above. Click here to read more about workdoc permissions.
+Customize your doc's header, layout, font style and size from the doc style store! Open it up in a menu on the right side of your screen by clicking the "Style" icon in your header:
+Check out the different font styles, adjust the page width and layout, and add a background color! You can reset to the default settings by clicking "Reset" in the top right corner of the menu.
+Communicating effectively with your team has never been easier with monday workdocs! You can "@ mention" anyone with access to your workdoc to collaborate seamlessly right in context.
+Comment on specific content within your Doc, comment within the Updates Section, or add annotations on images and files and see your team's collaboration flourish in the process! Click here for more information.
+It's simpler than ever to keep your workdoc organized using the table of contents! It will be generated automatically from all of the headings in your workdoc. To add or remove a table, simply toggle on or off in the style menu.
+Once you've added a table of contents, you can open and collapse it freely using the arrow to the left just below your workdoc's header.
+What better way is there to connect workdocs to your workflow than to turn your text into items on any board as you type? Take a look at this section of our workdoc text and elements article to learn more!
+Version history allows you to see the progression of your workdocs and gives you the ability to restore the workdoc to older versions. Being able to see all the changes made to a workdoc and being able to restore to previous versions gives you the transparency and flexibility your team needs to stay in the loop with each other!  Click here for more information.
+Connect docs across boards, create new docs, and even access your own Doc templates in your Files Column with Docs on file. This feature will bring your collaboration abilities to the next level! Click here for more information.
+If you have any questions, please reach out to our team right here. We’re available 24/7 and happy to help.
