@@ -1,6 +1,6 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
-import json
+import csv
 
 # Configure Selenium webdriver
 driver = webdriver.Chrome()  # You may need to download and specify the path to the Chrome webdriver
@@ -24,105 +24,51 @@ article_content = soup.find("div", class_="article-body")
 
 if article_content is not None:
     # Find h1 entries within the article content
-
     # Find the first <h1> tag
-    h1_tag = article_content.find_all('h1')
 
-    # Find the <p> tag that follows the <h1> tag
-    # acc_header = soup.find_all('div', class_="accordion-header")
-    # for header in acc_header:
-    #     print(header.text.strip(), 'is the acc header')
+    with open("corpus.csv", "w", newline='') as file:
+        writer = csv.writer(file)
 
-    # acc_body = soup.find_all('div', class_="accordion-body")
-    # for body in acc_body:
-    #     print(body.text.strip())
+        #Write column headers
+        writer.writerow(['Question', 'Response'])
+        h1_tag = article_content.find_all('h1')
 
+        for tag in h1_tag:
+            print('new section')
 
-    for tag in h1_tag:
-        print('new section')
-        print(tag.text.strip())
-        p_tag = tag.find_next_sibling('p')
-        # print('paragraph', '\n')
-        print(p_tag.get_text())
-    
-        
-        div_header_tag = p_tag.find_next('div', class_='accordion-header')
-        if div_header_tag is not None:
-            print(div_header_tag.get_text(), '\n')
+            question = []
+            question.append(tag.text.strip())
+            print(tag.text.strip())
 
-        # header_text = div_header_tag.get_text()
-            div_body_tag = div_header_tag.find_next("div", class_="accordion-body")
-            print(div_body_tag.get_text())
-        # body_text = div_body_tag.get_text()
+            p_tag = tag.find_next_sibling('p')
+            paragraph = []
+            paragraph.append(p_tag.get_text())
 
-        # print(header_text, '\n')
-        # print(body_text)
-        # acc_header = soup.find("div", class_="accordion-header")
-        # acc_header = soup.find_all('div', class_="accordion-header")
-        # print(acc_header, 'is the acc header')
+            print(p_tag.get_text())
 
-        # more_content = soup.find("div", class_="accordion-body")
-        # more_content = soup.find_all('div', class_="accordion-header")
-        # accordion = more_content.find_all("ul")
-        # data = []
-        # for acc in accordion:
-        #     data.append(acc.text.strip())
-        #     print(acc.text.strip())
-        # print(data)
+            
+            div_header_tag = p_tag.find_next('div', class_='accordion-header')
+            if div_header_tag is not None:
+                question.append(div_header_tag.get_text())
+                print(div_header_tag.get_text())
 
-    # Extract the text content of the <p> tag
-    # p_text = p_tag.get_text()
+            # header_text = div_header_tag.get_text()
+                div_body_tag = div_header_tag.find_next("div", class_="accordion-body")
+                paragraph.append(div_body_tag.get_text())
+                print(div_body_tag.get_text())
+            
+            writer.writerow([question, paragraph])
+        # with open("corpus.txt", "w") as file:
+        #     for i in range(len(dataset)):
+        #         if dataset[i] != '':
+        #             file.write(dataset[i])
+        #             file.write('\n')
 
-    # Print the extracted text
-    # print(h1_tag)
-    # print(p_text)
+        # for entry in h1_entries:
+        #     dataset.append(entry.text.strip())
 
-    # h1_entries = article_content.find_all("h1")
-    # for entry in h1_entries:
-    #     print("entry content")
-    #     # print(entry.text.strip())
-
-    # # Find paragraphs within the article content
-    # paragraphs = article_content.find_all("p")
-    # dataset = []
-
-    # for entry in paragraphs:
-    #     dataset.append(entry.text.strip())
-    #     # print("paragraph content")
-    #     # print(entry.text.strip())
-    # # print(dataset)
-    # more_content = soup.find("div", class_="accordion-body")
-    # accordion = more_content.find_all("ul")
-    # data = []
-    # for acc in accordion:
-    #     dataset.append(acc.text.strip())
-        
-    # clean_data = []
-    # # for i in range(1, len(dataset)):
-    # #     if i == len(dataset) - 1:
-    # #         clean_data.append(dataset[len(dataset) - 1])
-
-    # #     elif dataset[i] != '' and dataset[i-1] == '' and dataset[i+1] == '':
-    # #         clean_data.append(dataset[i])
-    # for i in range(len(dataset)):
-    #     if dataset[i] != '':
-    #         clean_data.append(dataset[i])
-
-    # print(clean_data)
-    # print(len(clean_data), "is the size of clean data")
-    # print(len(h1_entries), "is the number of h1 entries")
-
-    # with open("corpus.txt", "w") as file:
-    #     for i in range(len(dataset)):
-    #         if dataset[i] != '':
-    #             file.write(dataset[i])
-    #             file.write('\n')
-
-    # for entry in h1_entries:
-    #     dataset.append(entry.text.strip())
-
-    # for paragraph in paragraphs:
-    #     dataset.append(paragraph.text.strip())
+        # for paragraph in paragraphs:
+        #     dataset.append(paragraph.text.strip())
 
 else:
     print("Article content not found.")
