@@ -38,7 +38,7 @@ if article_content is not None:
         print(p_tag.get_text())
     
         
-        acc_header = soup.find_all("div", class_="accordion-header")
+        acc_header = soup.find("div", class_="accordion-header")
         print(acc_header.text.strip())
 
         more_content = soup.find("div", class_="accordion-body")
