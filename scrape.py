@@ -41,13 +41,12 @@ if article_content is not None:
         # print("paragraph content")
         # print(entry.text.strip())
     # print(dataset)
-    # more_content = soup.find("div", class_="accordion-body")
-# accordion = more_content.find_all("ul")
-# data = []
-# for acc in accordion:
-#     data.append(acc.text.strip())
-# for d in data:
-#     print(d)
+    more_content = soup.find("div", class_="accordion-body")
+    accordion = more_content.find_all("ul")
+    data = []
+    for acc in accordion:
+        dataset.append(acc.text.strip())
+        
     clean_data = []
     # for i in range(1, len(dataset)):
     #     if i == len(dataset) - 1:

@@ -21,3 +21,8 @@ What better way is there to connect workdocs to your workflow than to turn your 
 Version history allows you to see the progression of your workdocs and gives you the ability to restore the workdoc to older versions. Being able to see all the changes made to a workdoc and being able to restore to previous versions gives you the transparency and flexibility your team needs to stay in the loop with each other!  Click here for more information.
 Connect docs across boards, create new docs, and even access your own Doc templates in your Files Column with Docs on file. This feature will bring your collaboration abilities to the next level! Click here for more information.
 If you have any questions, please reach out to our team right here. We’re available 24/7 and happy to help.
+Step 1 - From within the workspace you'd like to create the workdoc in, click "Add"
+Step 2 - Select "New Doc"
+Step 3 - Type the name of your workdoc into the first field
+Step 4 - Select the type of workdoc
+Step 5 - Click "create workdoc"
