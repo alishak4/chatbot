@@ -29,13 +29,13 @@ if article_content is not None:
     h1_tag = article_content.find_all('h1')
 
     # Find the <p> tag that follows the <h1> tag
-    acc_header = soup.find_all('div', class_="accordion-header")
-    for header in acc_header:
-        print(header.text.strip(), 'is the acc header')
+    # acc_header = soup.find_all('div', class_="accordion-header")
+    # for header in acc_header:
+    #     print(header.text.strip(), 'is the acc header')
 
-    acc_body = soup.find_all('div', class_="accordion-body")
-    for body in acc_body:
-        print(body.text.strip())
+    # acc_body = soup.find_all('div', class_="accordion-body")
+    # for body in acc_body:
+    #     print(body.text.strip())
 
 
     for tag in h1_tag:
@@ -46,6 +46,17 @@ if article_content is not None:
         print(p_tag.get_text())
     
         
+        div_header_tag = p_tag.find_next('div', class_='accordion-header')
+        if div_header_tag is not None:
+            print(div_header_tag.get_text(), '\n')
+
+        # header_text = div_header_tag.get_text()
+            div_body_tag = div_header_tag.find_next("div", class_="accordion-body")
+            print(div_body_tag.get_text())
+        # body_text = div_body_tag.get_text()
+
+        # print(header_text, '\n')
+        # print(body_text)
         # acc_header = soup.find("div", class_="accordion-header")
         # acc_header = soup.find_all('div', class_="accordion-header")
         # print(acc_header, 'is the acc header')
