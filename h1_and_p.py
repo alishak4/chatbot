@@ -29,6 +29,14 @@ if article_content is not None:
     h1_tag = article_content.find_all('h1')
 
     # Find the <p> tag that follows the <h1> tag
+    acc_header = soup.find_all('div', class_="accordion-header")
+    for header in acc_header:
+        print(header.text.strip(), 'is the acc header')
+
+    acc_body = soup.find_all('div', class_="accordion-body")
+    for body in acc_body:
+        print(body.text.strip())
+
 
     for tag in h1_tag:
         print('new section')
@@ -38,15 +46,17 @@ if article_content is not None:
         print(p_tag.get_text())
     
         
-        acc_header = soup.find("div", class_="accordion-header")
-        print(acc_header.text.strip())
+        # acc_header = soup.find("div", class_="accordion-header")
+        # acc_header = soup.find_all('div', class_="accordion-header")
+        # print(acc_header, 'is the acc header')
 
-        more_content = soup.find("div", class_="accordion-body")
-        accordion = more_content.find_all("ul")
-        data = []
-        for acc in accordion:
-            data.append(acc.text.strip())
-            print(acc.text.strip())
+        # more_content = soup.find("div", class_="accordion-body")
+        # more_content = soup.find_all('div', class_="accordion-header")
+        # accordion = more_content.find_all("ul")
+        # data = []
+        # for acc in accordion:
+        #     data.append(acc.text.strip())
+        #     print(acc.text.strip())
         # print(data)
 
     # Extract the text content of the <p> tag
