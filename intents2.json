@@ -1,0 +1,53 @@
+{
+    "intents": [
+    {
+        "tag": "greeting",
+        "patterns": ["hi", "hello", "hey"],
+        "responses": ["Hello!", "Hi there!", "Hey! How can I assist you?"]
+      },
+
+    {
+        "patterns": ["What is a workdoc", "Show me how to add a workdoc"],
+        "responses": ["Think of it as a flexible, multi-media whiteboard where you and your team can record all notes and ideas related to one central topic. By adding individual elements to your workdoc, all your loose thoughts and ideas can come together in one place, right inside monday.com, where all the rest of your work is stored.\\xa0 \\xa0', '\\n\\nStep 1 -\\xa0From within the workspace you\\'d like to create the workdoc in, click \"Add\"\\nStep 2 - Select \"New Doc\"\\nStep 3 - Type the name of your workdoc into the first field\\nStep 4 - Select the type of workdoc\\nStep 5 - Click \"create workdoc\"\\n\\n"]
+    },
+    {
+        "patterns": ["Add a workdoc", "Show me how to add a workdoc"],
+        "responses": ["You can add a new workdoc just as you would add a new board or dashboard!\\xa0', '\\n\\nStep 1 -\\xa0From within the workspace you\\'d like to create the workdoc in, click \"Add\"\\nStep 2 - Select \"New Doc\"\\nStep 3 - Type the name of your workdoc into the first field\\nStep 4 - Select the type of workdoc\\nStep 5 - Click \"create workdoc\"\\n\\n"]
+    },
+    {
+        "patterns": ["Types of workdocs", "Show me the three types of workdocs"],
+        "responses": ["Just like boards and dashboards, there are three types of workdocs:", "\\n\\nMain workdoc- Main workdocs are visible to anyone who is a team member within your account. A team member can be an admin, a member, or a viewer. To learn more about the difference between each type, check out this article. Anything you will create in this workdoc will be accessible and transparent to your team members.\\nPrivate workdoc\\xa0 - Private workdocs can only be seen by the person who created the workdoc and by the specific team members they invite to join the workdoc. Private workdocs are only for internal users (viewers and team members), meaning that you cannot invite guests to them.\\nShareable workdoc - Shareable workdocs are used when you want to share a workdoc with people outside your team or company, such as clients, interns, or freelancers. You can invite these people as guests within your account in order to collaborate with them. When you invite a guest to a Shareable workdoc, they will only have access to the specific workdoc they have been invited to, and will not have access to any other information within your account. You can also invite viewers or team members to your Shareable workdoc.\\xa0\\n\\n"]
+    },
+    {
+        "patterns": ["Invite team members and share a link"],
+        "responses": ["To invite team members or guests, click the \"Share\" button at the top right corner of your screen:"]
+    },
+    {
+        "patterns": ["Edit permissions"],
+        "responses": ["There are two different types of edit permissions that you can implement in your workdoc:"]
+    },
+    {
+        "patterns": ["Doc style"],
+        "responses": [" Customize your doc\\'s header, layout, font style and size from the doc style store! Open it up in a menu on the right side of your screen by clicking the \"Style\" icon in your header: "]
+    },
+    {
+        "patterns": ["Collaborate with team members"],
+        "responses": ["Communicating effectively with your team has never been easier with monday workdocs! You can \"@ mention\" anyone with access to your workdoc to collaborate seamlessly right in context.\\xa0"]
+    },
+    {
+        "patterns": ["Easily organize with a table of contents"],
+        "responses": ["It's simpler than ever to keep your workdoc organized using the table of contents! It will be generated automatically from all of the headings in your workdoc. To add or remove a table, simply toggle on or off in the style menu."]
+    },
+    {
+        "patterns": ["Create new items from text"],
+        "responses": ["What better way is there to connect workdocs to your workflow than to turn your text into items on any board as you type? Take a look at this section of our workdoc text and elements article to learn more!"]
+    },
+    {
+        "patterns": ["Version history"],
+        "response": ["Version history allows you to see the progression of your workdocs and gives you the ability to restore the workdoc to older versions. Being able to see all the changes made to a workdoc and being able to restore to previous versions gives you the transparency and flexibility your team needs to stay in the loop with each other!\\xa0 Click here for more information."]
+    },
+    {
+        "patterns": ["Docs on file"],
+        "response": ["Connect docs across boards, create new docs, and even access your own Doc templates in your Files Column with Docs on file. This feature will bring your collaboration abilities to the next level! Click here for more information."]
+    }
+]}

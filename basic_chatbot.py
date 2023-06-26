@@ -3,7 +3,7 @@ import random
 import re
 
 # Load intents from a JSON file
-intents = json.loads(open('intents.json').read())
+intents = json.loads(open('intents2.json').read())
 
 def get_response(intents, user_input):
     user_input = user_input.lower()
